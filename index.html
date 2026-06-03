@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>சலேத் மாதா ஆலயம் - கட்டுமான வரலாறு</title>
+  <meta name="description" content="சலேத் மாதா ஆலய கட்டுமான வரலாற்று ஆவணம் - நிலம் தூய்மைப்படுத்துதல் முதல் முதல் திருப்பலி வரை">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="ta">
+
+  <!-- ==========================================
+       Header & Navigation
+       ========================================== -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo-portrait">
+        <img src="madha_portrait.png" alt="Saleth Matha Logo" class="nav-logo-img">
+      </div>
+      <div class="nav-brand-text">
+        <span class="nav-logo-text" data-i18n="nav_logo">சலேத் மாதா ஆலயம்</span>
+        <span class="nav-logo-sub" data-i18n="nav_logo_sub">சலேத் நகர், மாரம்பாடி</span>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link" data-i18n="nav_home">முகப்பு</a></li>
+        <li><a href="#timeline" class="nav-link" data-i18n="nav_journey">ஆலய பயணம்</a></li>
+        <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">புகைப்படங்கள்</a></li>
+        <li><a href="#video-section" class="nav-link" data-i18n="nav_opening">திறப்பு விழா</a></li>
+        <li><a href="#stats" class="nav-link" data-i18n="nav_stats">புள்ளிவிவரங்கள்</a></li>
+      </ul>
+    </nav>
+
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <!-- Single Language Display Mode Switcher -->
+      <div class="lang-switch-container">
+        <button id="btn-lang-ta" class="lang-btn active" onclick="setLanguage('ta')">தமிழ்</button>
+        <button id="btn-lang-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+      </div>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       Hero Section (Documentary Style)
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="madha-portrait-container">
+        <div class="madha-portrait-frame">
+          <img src="madha_portrait.png" alt="Holy Madha Portrait" class="madha-portrait-img">
+        </div>
+      </div>
+      <h1 class="hero-title" data-i18n="hero_title">சலேத் மாதா ஆலய கட்டுமான வரலாறு</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">இறைவனின் அருளாலும் மக்களின் ஒற்றுமையாலும் உருவான ஆலயப் பயணம்</p>
+      <button class="hero-btn" onclick="scrollToTimeline()" data-i18n="hero_btn">எங்கள் பயணம்</button>
+    </div>
+    <div class="hero-scroll-indicator" onclick="scrollToTimeline()">↓</div>
+  </section>
+
+  <!-- ==========================================
+       Timeline Section (Archive & Chronological Chapters)
+       ========================================== -->
+  <section class="section-padding" id="timeline">
+    <div class="section-header">
+      <span class="section-label" data-i18n="timeline_label">ஆவணப் பதிவுகள்</span>
+      <h2 class="section-title" data-i18n="timeline_title">வரலாற்று காலவரிசை</h2>
+      <p class="section-subtitle" data-i18n="timeline_desc">ஆலயத்தின் ஆரம்பக் கட்ட தூய்மைப்பணியில் இருந்து முதல் திருப்பலி மற்றும் திறப்பு விழா வரையிலான அழகிய அத்தியாயங்கள்.</p>
+    </div>
+
+    <div class="timeline-container">
+      
+      <!-- STAGE 1 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter I</span>
+          <h3 class="card-title" data-i18n="stage1_title">தூய்மைப்படுத்தும் பணி</h3>
+          <p class="card-desc" data-i18n="stage1_desc">ஆலய கட்டுமானத்திற்காக தேர்ந்தெடுக்கப்பட்ட நிலத்தை தூய்மைப்படுத்தும் பணிகள் இறைவனின் துணையோடு தொடங்கின. முட்புதர்கள் அகற்றப்பட்டு, தரை சமன்படுத்தப்பட்டு ஆலய அஸ்திவாரத்திற்கு வழிவகுக்கப்பட்டது.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage1_1_title" data-i18n-desc="img_stage1_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.48.46 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Cleaning Process 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage1_2_title" data-i18n-desc="img_stage1_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.48.47 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Cleaning Process 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_1">அடைவு 1</span></span>
+            <span><i>📍</i> <span data-i18n="loc_site">ஆலய வளாகம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 2 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter II</span>
+          <h3 class="card-title" data-i18n="stage2_title">ஆரம்ப ஜெப நிகழ்வு</h3>
+          <p class="card-desc" data-i18n="stage2_desc">பணிகள் செம்மையாக நடைபெற, ஊர் மக்கள் மற்றும் பங்குத்தந்தையர் இணைந்து நடத்திய கூட்டுப் பிரார்த்தனை மற்றும் ஆரம்ப ஜெப நிகழ்வு. அஸ்திவாரக்கல் நடும் முன் இந்த விழா நடைபெற்றது.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage2_1_title" data-i18n-desc="img_stage2_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.50.00 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Prayer Ceremony 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage2_2_title" data-i18n-desc="img_stage2_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.50.08 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Prayer Ceremony 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_2">அடைவு 2</span></span>
+            <span><i>📍</i> <span data-i18n="loc_prayer">ஜெப மேடை</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 3 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter III</span>
+          <h3 class="card-title" data-i18n="stage3_title">கட்டுமான தொடக்கம்</h3>
+          <p class="card-desc" data-i18n="stage3_desc">ஆலயத்தின் அஸ்திவாரப் பணிகள் முறையாகத் தொடங்கின. கற்களும் மணலும் கொண்டு ஆலயம் உறுதியுடன் அமைப்பதற்கான முதல் கட்டுமானக் கட்டமைப்புப் பணிகள் நடைபெற்றன.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage3_1_title" data-i18n-desc="img_stage3_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.48.47 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Beginning of Construction 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage3_2_title" data-i18n-desc="img_stage3_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.44.32 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Beginning of Construction 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_3">அடைவு 3</span></span>
+            <span><i>📍</i> <span data-i18n="loc_foundation">அடிதளம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 4 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter IV</span>
+          <h3 class="card-title" data-i18n="stage4_title">பாதி கட்டுமான நிலை</h3>
+          <p class="card-desc" data-i18n="stage4_desc">செங்கற்கள் மற்றும் கான்கிரீட் தூண்கள் கொண்டு ஆலயத்தின் சுவர்கள் பாதி உயரத்திற்கு எழுப்பப்பட்ட நிலை. ஆலயத்தின் முழுமையான வடிவம் மெல்லத் தெரியத் தொடங்கிய தருணம்.</p>
+          <div class="card-gallery">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage4_1_title" data-i18n-desc="img_stage4_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.48.48 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Half Building Structure" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_4">அடைவு 4</span></span>
+            <span><i>📍</i> <span data-i18n="loc_construction">கட்டுமான தளம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 5 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter V</span>
+          <h3 class="card-title" data-i18n="stage5_title">மோல்டிங் மற்றும் கட்டமைப்பு வேலைகள்</h3>
+          <p class="card-desc" data-i18n="stage5_desc">கூரைப்பகுதி மோல்டிங் (Roof Molding) எனப்படும் கூரை கான்கிரீட் அமைப்பதற்கான உன்னத வேலைகள் நடைபெற்றன. கம்பி கட்டுதல் மற்றும் இதர கட்டமைப்புப் பணிகள் துல்லியமாக மேற்கொள்ளப்பட்டன.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage5_1_title" data-i18n-desc="img_stage5_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 12.24.31 PM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Molding and Structural Development 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage5_2_title" data-i18n-desc="img_stage5_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 12.24.32 PM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Molding and Structural Development 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_5">அடைவு 5</span></span>
+            <span><i>📍</i> <span data-i18n="loc_roof">கூரைப்பகுதி</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 6 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter VI</span>
+          <h3 class="card-title" data-i18n="stage6_title">நிலை வாசல் பூஜை</h3>
+          <p class="card-desc" data-i18n="stage6_desc">ஆலயத்தின் பிரதான நிலை வாசல் கதவுச் சட்டம் நிலைநிறுத்தப்படும் உன்னத நிகழ்வு. பாரம்பரிய முறைப்படி மாலைகள் அணிவிக்கப்பட்டு சிறப்பு பிரார்த்தனைகள் செய்யப்பட்டன.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage6_1_title" data-i18n-desc="img_stage6_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.36 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Nilai Vasal Ceremony 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage6_2_title" data-i18n-desc="img_stage6_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.36 AM (1)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Nilai Vasal Ceremony 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_6">அடைவு 6</span></span>
+            <span><i>📍</i> <span data-i18n="loc_main_portal">பிரதான வாயில்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 7 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter VII</span>
+          <h3 class="card-title" data-i18n="stage7_title">ஆலய வர்ணப்பூச்சு</h3>
+          <p class="card-desc" data-i18n="stage7_desc">புதிய ஆலயம் தூய வெண்மை மற்றும் அரச நீல வர்ணங்கள் கொண்டு வர்ணப்பூச்சு பணிகள் நிறைவடைந்த தருணம். ஆலயத்திற்கு ஒரு தெய்வீக அழகைக் கொடுத்த அத்தியாயம்.</p>
+          <div class="card-gallery">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage7_1_title" data-i18n-desc="img_stage7_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.39 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Church Painting" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_7">அடைவு 7</span></span>
+            <span><i>📍</i> <span data-i18n="loc_facade">புறச்சுவர்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 8 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter VIII</span>
+          <h3 class="card-title" data-i18n="stage8_title">ஆலய மின்விளக்கு அலங்காரம்</h3>
+          <p class="card-desc" data-i18n="stage8_desc">மின்விளக்குகள் பொருத்தப்பட்டு இரவில் ஒளிரும் ஆலயத்தின் கம்பீரக் காட்சி. வண்ண விளக்குகள் ஆலயத்தின் வளைவுகளையும் கோபுரத்தையும் அழகாகப் பிரதிபலித்தன.</p>
+          <div class="card-gallery">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage8_1_title" data-i18n-desc="img_stage8_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.48.48 AM (2).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Church Lighting" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_8">அடைவு 8</span></span>
+            <span><i>📍</i> <span data-i18n="loc_spire">ஆலயக் கோபுரம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 9 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter IX</span>
+          <h3 class="card-title" data-i18n="stage9_title">முதற்கட்ட சிறிய திருஉருவம்</h3>
+          <p class="card-desc" data-i18n="stage9_desc">ஆலயத்தில் பிரதிஷ்டை செய்யப்படுவதற்காக வடிவமைக்கப்பட்ட சலேத் மாதாவின் முதற்கட்ட சிறிய வடிவிலான திருஉருவம். இதன் மென்மையான முக பாவனைகளும் அமைதியான வண்ணங்களும் நேர்த்தியாக செதுக்கப்பட்டன.</p>
+          <div class="card-gallery">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage9_1_title" data-i18n-desc="img_stage9_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.37 AM (2)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Initial Devotional Statue" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_9">அடைவு 9</span></span>
+            <span><i>📍</i> <span data-i18n="loc_workshop">சிலைக்கூடம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 10 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter X</span>
+          <h3 class="card-title" data-i18n="stage10_title">முக்கிய திருஉருவத்தின் உருவாக்கம்</h3>
+          <p class="card-desc" data-i18n="stage10_desc">ஆலயப் பீடத்தில் நிறுவப்படுவதற்காக பிரம்மாண்டமான முறையில் செதுக்கப்பட்ட சலேத் மாதாவின் முக்கிய பெரிய திருவுருவத்தின் உருவாக்க வேலைப்பாடுகள். சிற்பி மெருகூட்டும் இறுதி வேலைகள் இதில் அடங்கும்.</p>
+          <div class="card-gallery two-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage10_1_title" data-i18n-desc="img_stage10_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.38 AM (1)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Development of the Main Statue 1" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage10_2_title" data-i18n-desc="img_stage10_2_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.47.38 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Development of the Main Statue 2" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_10">அடைவு 10</span></span>
+            <span><i>📍</i> <span data-i18n="loc_atelier">சிற்பக்கலை மையம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 11 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card">
+          <span class="card-chapter">Chapter XI</span>
+          <h3 class="card-title" data-i18n="stage11_title">திருஉருவ வரவேற்பு மற்றும் ஆலய நுழைவு</h3>
+          <p class="card-desc" data-i18n="stage11_desc">முடிக்கப்பட்ட சலேத் அன்னையின் திருவுருவம் கிராமத்திற்குள் ஊர்வலமாகக் கொண்டுவரப்பட்டு, புதிய ஆலயத்திற்குள் நுழைந்து பீடத்தில் முறைப்படி நிறுவப்பட்ட உன்னத தருணங்கள்.</p>
+          <div class="card-gallery three-cols">
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage11_1_title" data-i18n-desc="img_stage11_1_desc">
+              <img data-src="WhatsApp Image 2026-06-03 at 11.52.42 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Statue Procession" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage11_2_title" data-i18n-desc="img_stage11_2_desc">
+              <img data-src="IMG_3056(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Statue Entry" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+            <div class="img-frame" onclick="openLightbox(this)" data-i18n-title="img_stage11_3_title" data-i18n-desc="img_stage11_3_desc">
+              <img data-src="IMG_3057(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Statue on Altar" loading="lazy">
+              <div class="img-overlay"><div class="img-zoom-icon">🔍</div></div>
+            </div>
+          </div>
+          <div class="museum-meta">
+            <span><i>📅</i> <span data-i18n="archive_11">அடைவு 11</span></span>
+            <span><i>📍</i> <span data-i18n="loc_altar">ஆலயப் பீடம்</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAGE 12 -->
+      <div class="timeline-item reveal-on-scroll">
+        <div class="timeline-node"></div>
+        <div class="museum-card celebration-card">
+          <div class="celebration-badge">
+            <span class="bell-icon">🔔</span>
+            <span data-i18n="stage12_chapter">சங்கீத அத்தியாயம்</span>
+          </div>
+          <h3 class="card-title" data-i18n="stage12_title">முதல் திருப்பலி</h3>
+          <p class="card-desc" data-i18n="stage12_desc"><strong>29.05.2026</strong> அன்று புதிய சலேத் மாதா ஆலயத்தில் முதலாவது திருச்சடங்கு நிகழ்வும் வரலாற்றுச் சிறப்புமிக்க முதல் திருப்பலியும் பங்குத்தந்தையின் தலைமையில் கிராம மக்களின் பெரும் மகிழ்ச்சியோடு கொண்டாடப்பட்டது.</p>
+          <div class="museum-meta">
+            <span style="color: var(--gold-light); font-weight: bold;">
+              <i>📅</i> 29.05.2026
+            </span>
+            <span>
+              <i>📍</i> <span data-i18n="loc_sanctuary">பலிபீடம்</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Stage 13: Church Opening Ceremony Video Section
+       ========================================== -->
+  <section class="section-padding" id="video-section" style="background: rgba(10, 17, 40, 0.95); position: relative; border-top: 1px solid var(--border-gold);">
+    <div class="section-header">
+      <span class="section-label" data-i18n="video_label">ஆவணக் காணொளி</span>
+      <h2 class="section-title" data-i18n="video_title">திறப்பு விழா காணொளி</h2>
+      <p class="section-subtitle" data-i18n="video_desc">சலேத் மாதா ஆலயத் திறப்பு விழாவின் பரவசமளிக்கும் நேரடித் திருவிழா ஆவணக் காணொளிப் பதிவு.</p>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="video-card reveal-on-scroll">
+        <span class="card-chapter" style="text-align: center; display: block; margin-bottom: 0.5rem;" data-i18n="video_chapter">அத்தியாயம் XIII - இறுதி மைல்கல்</span>
+        <h3 class="card-title text-center" style="margin-bottom: 1.5rem;" data-i18n="video_sub_title">ஆலய திறப்பு விழா மற்றும் ஆசி வழங்குதல்</h3>
+        <div class="documentary-player-container">
+          <video controls preload="metadata">
+            <source src="WhatsApp Video 2026-06-03 at 12.01.29 PM.mp4" type="video/mp4">
+            <span data-i18n="video_fallback">உங்கள் உலாவி வீடியோவை ஆதரிக்கவில்லை.</span>
+          </video>
+        </div>
+        <div class="museum-meta" style="justify-content: center; margin-top: 2rem;">
+          <span><i>📅</i> 29.05.2026</span>
+          <span><i>🎥</i> <span data-i18n="video_label">ஆவணக் காணொளி</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Photo Gallery Section
+       ========================================== -->
+  <section class="section-padding gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-label" data-i18n="gallery_label">டிஜிட்டல் மியூசியம்</span>
+      <h2 class="section-title" data-i18n="gallery_title">புகைப்பட ஆவணக் காப்பகம்</h2>
+      <p class="section-subtitle" data-i18n="gallery_desc">ஆலய கட்டுமானப் பணியின் அனைத்து கட்டங்களையும் ஆவணப்படுத்தும் உயர் தெளிவு புகைப்படங்கள்.</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="gallery-filters reveal-on-scroll">
+      <button class="filter-btn active" data-filter="all" onclick="filterGallery('all', this)" data-i18n="filter_all">அனைத்தும்</button>
+      <button class="filter-btn" data-filter="cleaning" onclick="filterGallery('cleaning', this)" data-i18n="filter_cleaning">தூய்மைப்படுத்துதல்</button>
+      <button class="filter-btn" data-filter="prayer" onclick="filterGallery('prayer', this)" data-i18n="filter_prayer">ஜெபம்</button>
+      <button class="filter-btn" data-filter="construction" onclick="filterGallery('construction', this)" data-i18n="filter_construction">கட்டுமானம்</button>
+      <button class="filter-btn" data-filter="development" onclick="filterGallery('development', this)" data-i18n="filter_development">கட்டமைப்பு</button>
+      <button class="filter-btn" data-filter="painting" onclick="filterGallery('painting', this)" data-i18n="filter_painting">வர்ணப்பூச்சு</button>
+      <button class="filter-btn" data-filter="lighting" onclick="filterGallery('lighting', this)" data-i18n="filter_lighting">மின்விளக்கு</button>
+      <button class="filter-btn" data-filter="statue-creation" onclick="filterGallery('statue-creation', this)" data-i18n="filter_statue_creation">சிலை உருவாக்கம்</button>
+      <button class="filter-btn" data-filter="statue-installation" onclick="filterGallery('statue-installation', this)" data-i18n="filter_statue_installation">சிலை பிரதிஷ்டை</button>
+      <button class="filter-btn" data-filter="first-mass" onclick="filterGallery('first-mass', this)" data-i18n="filter_first_mass">முதல் திருப்பலி</button>
+    </div>
+
+    <!-- Masonry Gallery Grid -->
+    <div class="gallery-grid" id="galleryGrid">
+      
+      <!-- Cleaning -->
+      <div class="gallery-item reveal-on-scroll" data-category="cleaning" onclick="openLightbox(this)" data-i18n-title="img_stage1_1_title" data-i18n-desc="img_stage1_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.48.46 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Cleaning 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage1_1_title">தூய்மைப்படுத்தும் பணி - பகுதி 1</h4>
+          <span class="gallery-item-cat" data-i18n="filter_cleaning">தூய்மைப்படுத்துதல்</span>
+        </div>
+      </div>
+      
+      <div class="gallery-item reveal-on-scroll" data-category="cleaning" onclick="openLightbox(this)" data-i18n-title="img_stage1_2_title" data-i18n-desc="img_stage1_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.48.47 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Cleaning 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage1_2_title">தூய்மைப்படுத்தும் பணி - பகுதி 2</h4>
+          <span class="gallery-item-cat" data-i18n="filter_cleaning">தூய்மைப்படுத்துதல்</span>
+        </div>
+      </div>
+
+      <!-- Prayer -->
+      <div class="gallery-item reveal-on-scroll" data-category="prayer" onclick="openLightbox(this)" data-i18n-title="img_stage2_1_title" data-i18n-desc="img_stage2_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.50.00 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Prayer 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage2_1_title">ஆரம்ப ஜெப நிகழ்வு - பிரசங்கம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_prayer">ஜெபம்</span>
+        </div>
+      </div>
+      
+      <div class="gallery-item reveal-on-scroll" data-category="prayer" onclick="openLightbox(this)" data-i18n-title="img_stage2_2_title" data-i18n-desc="img_stage2_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.50.08 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Prayer 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage2_2_title">ஆரம்ப ஜெப நிகழ்வு - மக்கள் கூட்டுப் பிரார்த்தனை</h4>
+          <span class="gallery-item-cat" data-i18n="filter_prayer">ஜெபம்</span>
+        </div>
+      </div>
+
+      <!-- Construction -->
+      <div class="gallery-item reveal-on-scroll tall" data-category="construction" onclick="openLightbox(this)" data-i18n-title="img_stage3_1_title" data-i18n-desc="img_stage3_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.48.47 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Construction 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage3_1_title">கட்டுமானத் தொடக்கம் - அஸ்திவாரம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_construction">கட்டுமானம்</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll tall" data-category="construction" onclick="openLightbox(this)" data-i18n-title="img_stage3_2_title" data-i18n-desc="img_stage3_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.44.32 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Construction 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage3_2_title">கட்டுமானத் தொடக்கம் - கற்கள் அடுக்கல்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_construction">கட்டுமானம்</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll tall" data-category="construction" onclick="openLightbox(this)" data-i18n-title="img_stage4_1_title" data-i18n-desc="img_stage4_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.48.48 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Construction 3" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage4_1_title">பாதி கட்டுமான நிலை</h4>
+          <span class="gallery-item-cat" data-i18n="filter_construction">கட்டுமானம்</span>
+        </div>
+      </div>
+
+      <!-- Development -->
+      <div class="gallery-item reveal-on-scroll" data-category="development" onclick="openLightbox(this)" data-i18n-title="img_stage5_1_title" data-i18n-desc="img_stage5_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 12.24.31 PM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Development 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage5_1_title">கம்பி கட்டும் பணி</h4>
+          <span class="gallery-item-cat" data-i18n="filter_development">கட்டமைப்பு</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll tall" data-category="development" onclick="openLightbox(this)" data-i18n-title="img_stage5_2_title" data-i18n-desc="img_stage5_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 12.24.32 PM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Development 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage5_2_title">கூரை கான்கிரீட் ஊற்றுதல்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_development">கட்டமைப்பு</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll" data-category="development" onclick="openLightbox(this)" data-i18n-title="img_stage6_1_title" data-i18n-desc="img_stage6_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.36 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Development 3" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage6_1_title">நிலை வாசல் கதவுச் சட்டம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_development">கட்டமைப்பு</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll" data-category="development" onclick="openLightbox(this)" data-i18n-title="img_stage6_2_title" data-i18n-desc="img_stage6_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.36 AM (1)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Development 4" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage6_2_title">நிலை வாசல் பூஜை நிகழ்வு</h4>
+          <span class="gallery-item-cat" data-i18n="filter_development">கட்டமைப்பு</span>
+        </div>
+      </div>
+
+      <!-- Painting -->
+      <div class="gallery-item reveal-on-scroll tall" data-category="painting" onclick="openLightbox(this)" data-i18n-title="img_stage7_1_title" data-i18n-desc="img_stage7_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.39 AM (1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Painting" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage7_1_title">வர்ணப்பூச்சு பணிகள்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_painting">வர்ணப்பூச்சு</span>
+        </div>
+      </div>
+
+      <!-- Lighting -->
+      <div class="gallery-item reveal-on-scroll tall" data-category="lighting" onclick="openLightbox(this)" data-i18n-title="img_stage8_1_title" data-i18n-desc="img_stage8_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.48.48 AM (2).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Lighting" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage8_1_title">மின்விளக்கு அலங்காரம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_lighting">மின்விளக்கு</span>
+        </div>
+      </div>
+
+      <!-- Statue Creation -->
+      <div class="gallery-item reveal-on-scroll tall" data-category="statue-creation" onclick="openLightbox(this)" data-i18n-title="img_stage9_1_title" data-i18n-desc="img_stage9_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.37 AM (2)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Statue Creation 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage9_1_title">சிறிய சலேத் மாதா திருஉருவம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_statue_creation">சிலை உருவாக்கம்</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll tall" data-category="statue-creation" onclick="openLightbox(this)" data-i18n-title="img_stage10_1_title" data-i18n-desc="img_stage10_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.38 AM (1)(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Statue Creation 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage10_1_title">முக்கிய திருஉருவம் - ஆரம்ப வேலைகள்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_statue_creation">சிலை உருவாக்கம்</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll tall" data-category="statue-creation" onclick="openLightbox(this)" data-i18n-title="img_stage10_2_title" data-i18n-desc="img_stage10_2_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.47.38 AM(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Statue Creation 3" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage10_2_title">முக்கிய திருஉருவம் - வண்ணம் தீட்டுதல்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_statue_creation">சிலை உருவாக்கம்</span>
+        </div>
+      </div>
+
+      <!-- Statue Installation -->
+      <div class="gallery-item reveal-on-scroll tall" data-category="statue-installation" onclick="openLightbox(this)" data-i18n-title="img_stage11_1_title" data-i18n-desc="img_stage11_1_desc">
+        <img data-src="WhatsApp Image 2026-06-03 at 11.52.42 AM.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 4'%3E%3C/svg%3E" alt="Statue Installation 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage11_1_title">அன்னையின் ஊர்வலம்</h4>
+          <span class="gallery-item-cat" data-i18n="filter_statue_installation">சிலை பிரதிஷ்டை</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-on-scroll" data-category="statue-installation" onclick="openLightbox(this)" data-i18n-title="img_stage11_2_title" data-i18n-desc="img_stage11_2_desc">
+        <img data-src="IMG_3056(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="Statue Installation 2" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage11_2_title">ஆலய நுழைவு</h4>
+          <span class="gallery-item-cat" data-i18n="filter_statue_installation">சிலை பிரதிஷ்டை</span>
+        </div>
+      </div>
+
+      <!-- First Mass / Finished Church -->
+      <div class="gallery-item reveal-on-scroll" data-category="first-mass" onclick="openLightbox(this)" data-i18n-title="img_stage11_3_title" data-i18n-desc="img_stage11_3_desc">
+        <img data-src="IMG_3057(1).jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3E%3C/svg%3E" alt="First Mass 1" loading="lazy">
+        <div class="gallery-item-info">
+          <h4 class="gallery-item-title" data-i18n="img_stage11_3_title">பீடத்தில் அன்னை பிரதிஷ்டை</h4>
+          <span class="gallery-item-cat" data-i18n="filter_first_mass">முதல் திருப்பலி</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Statistics Section
+       ========================================== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-grid">
+      <!-- Stat 1 -->
+      <div class="stat-card reveal-on-scroll">
+        <div class="stat-icon">📈</div>
+        <div class="stat-number" data-target="13">0</div>
+        <div class="stat-label" data-i18n="stats_stages">கட்டுமான நிலைகள்</div>
+      </div>
+      <!-- Stat 2 -->
+      <div class="stat-card reveal-on-scroll">
+        <div class="stat-icon">🖼️</div>
+        <div class="stat-number" data-target="19">0</div>
+        <div class="stat-label" data-i18n="stats_images">ஆவணப் படங்கள்</div>
+      </div>
+      <!-- Stat 3 -->
+      <div class="stat-card reveal-on-scroll">
+        <div class="stat-icon">🎥</div>
+        <div class="stat-number" data-target="1">0</div>
+        <div class="stat-label" data-i18n="stats_videos">வீடியோ ஆவணங்கள்</div>
+      </div>
+      <!-- Stat 4 -->
+      <div class="stat-card reveal-on-scroll">
+        <div class="stat-icon">⛪</div>
+        <div class="stat-number" style="font-size: 1.8rem; padding: 0.6rem 0;" data-type="text">29.05.2026</div>
+        <div class="stat-label" data-i18n="stats_date">திறப்பு விழா தேதி</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Footer Section
+       ========================================== -->
+  <footer class="archive-footer">
+    <div class="footer-content">
+      <div class="footer-cross">†</div>
+      <p class="footer-text" data-i18n="footer_text">இறைவனின் அருளால் நிறைவேறிய ஆலய கட்டுமான வரலாறு</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copyright">
+        &copy; 2026 Saleth Matha Church History Archive
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Premium Lightbox UI
+       ========================================== -->
+  <div class="lightbox" id="museumLightbox">
+    <!-- Close -->
+    <button class="lightbox-btn lightbox-close" onclick="closeLightbox()">✕</button>
+    
+    <!-- Nav controls -->
+    <button class="lightbox-btn lightbox-nav lightbox-prev" onclick="prevLightboxImage()">‹</button>
+    <button class="lightbox-btn lightbox-nav lightbox-next" onclick="nextLightboxImage()">›</button>
+    
+    <!-- Zoom controls -->
+    <div class="lightbox-zoom-bar">
+      <button class="lightbox-zoom-btn" onclick="zoomLightbox(0.15)">➕</button>
+      <button class="lightbox-zoom-btn" onclick="zoomLightbox(-0.15)">➖</button>
+      <button class="lightbox-zoom-btn" onclick="resetLightboxZoom()">🔄</button>
+    </div>
+
+    <!-- Viewer content -->
+    <div class="lightbox-content-wrapper">
+      <div class="lightbox-viewport" id="lightboxViewport" 
+           onmousedown="startDrag(event)" 
+           onmousemove="drag(event)" 
+           onmouseup="endDrag()" 
+           onmouseleave="endDrag()"
+           ontouchstart="handleTouchStart(event)"
+           ontouchmove="handleTouchMove(event)"
+           ontouchend="handleTouchEnd()">
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Museum Zoomed View">
+      </div>
+      
+      <!-- Descriptions -->
+      <div class="lightbox-caption-panel">
+        <h4 class="lightbox-caption-title" id="lightboxTitle"></h4>
+        <p class="lightbox-caption-text" id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
