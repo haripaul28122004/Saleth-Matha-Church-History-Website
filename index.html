@@ -30,6 +30,7 @@
         <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">புகைப்படங்கள்</a></li>
         <li><a href="#video-section" class="nav-link" data-i18n="nav_opening">திறப்பு விழா</a></li>
         <li><a href="#stats" class="nav-link" data-i18n="nav_stats">புள்ளிவிவரங்கள்</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">தொடர்பு</a></li>
       </ul>
     </nav>
 
@@ -607,12 +608,68 @@
   </section>
 
   <!-- ==========================================
+       Contact & Location Section
+       ========================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="section-header reveal-on-scroll">
+      <div class="contact-header-icon">⛪</div>
+      <span class="section-label" data-i18n="contact_subtitle">Get in touch with us and find our church location.</span>
+      <h2 class="section-title" data-i18n="contact_title">Contact & Location</h2>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Card 1: Address -->
+      <div class="contact-card reveal-on-scroll">
+        <div class="contact-card-icon">🏛️</div>
+        <h3 class="contact-card-title" data-i18n="card_address_title">Church Address</h3>
+        <p class="contact-card-text" data-i18n="card_address_text">
+          St. Saleth Matha Church<br>
+          Saleth Nagar<br>
+          Marambadi<br>
+          Dindigul District<br>
+          Tamil Nadu – 624709<br>
+          India
+        </p>
+      </div>
+
+      <!-- Card 2: Contact Details -->
+      <div class="contact-card reveal-on-scroll" style="transition-delay: 0.1s;">
+        <div class="contact-card-icon">📞</div>
+        <h3 class="contact-card-title" data-i18n="card_details_title">Contact Details</h3>
+        <div class="contact-info-block">
+          <p class="contact-card-text">
+            <a href="tel:+918838498762" class="phone-link" data-i18n="card_details_phone">Phone: +91 88384 98762</a>
+          </p>
+          <p class="contact-card-text">
+            <a href="mailto:info@salethmathachurch.org" class="email-link" data-i18n="card_details_email">Email: info@salethmathachurch.org</a>
+          </p>
+        </div>
+        <div class="contact-card-actions">
+          <a href="tel:+918838498762" class="contact-btn call-btn" data-i18n="card_details_btn">Call Now</a>
+          <button id="copy-phone-btn" class="contact-btn copy-btn" onclick="copyPhoneNumber()" data-i18n="card_details_copy_btn">Copy</button>
+        </div>
+      </div>
+
+      <!-- Card 3: Location -->
+      <div class="contact-card reveal-on-scroll" style="transition-delay: 0.2s;">
+        <div class="contact-card-icon">📍</div>
+        <h3 class="contact-card-title" data-i18n="card_location_title">Location</h3>
+        <p class="contact-card-text" data-i18n="card_location_desc">
+          View the church location on Google Maps and navigate easily.
+        </p>
+        <a href="https://maps.app.goo.gl/5KZFHqXuiHEqW9BG8?g_st=aw" target="_blank" rel="noopener noreferrer" class="contact-btn maps-btn" data-i18n="card_location_btn">Open Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
        Footer Section
        ========================================== -->
   <footer class="archive-footer">
     <div class="footer-content">
       <div class="footer-cross">†</div>
       <p class="footer-text" data-i18n="footer_text">இறைவனின் அருளால் நிறைவேறிய ஆலய கட்டுமான வரலாறு</p>
+      <p class="footer-blessing" data-i18n="footer_blessing">சலேத் மாதாவின் அருள் ஒவ்வொரு குடும்பத்தையும் வழிநடத்தி, காத்து, பலப்படுத்தட்டும்.</p>
       <div class="footer-divider"></div>
       <p class="footer-copyright">
         &copy; 2026 Saleth Matha Church History Archive

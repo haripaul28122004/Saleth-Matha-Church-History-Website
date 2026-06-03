@@ -147,7 +147,23 @@ const translations = {
     img_stage11_3_desc: "ஆலயத்தின் பீடத்தில் நிறுவப்பட்ட கம்பீரமான சலேத் அன்னை.",
 
     // Footer Text
-    footer_text: "இறைவனின் அருளால் நிறைவேறிய ஆலய கட்டுமான வரலாறு"
+    footer_text: "இறைவனின் அருளால் நிறைவேறிய ஆலய கட்டுமான வரலாறு",
+
+    // Contact & Location Section
+    nav_contact: "தொடர்பு",
+    contact_title: "தொடர்பு & இருப்பிடம்",
+    contact_subtitle: "எங்களை தொடர்புகொண்டு ஆலய இருப்பிடத்தை அறிந்துகொள்ளுங்கள்.",
+    card_address_title: "ஆலய முகவரி",
+    card_address_text: "புனித சலேத் மாதா ஆலயம்<br>சலேத் நகர்<br>மாரம்பாடி<br>திண்டுக்கல் மாவட்டம்<br>தமிழ்நாடு – 624709<br>இந்தியா",
+    card_details_title: "தொடர்பு விவரங்கள்",
+    card_details_phone: "தொலைபேசி: +91 88384 98762",
+    card_details_email: "மின்னஞ்சல்: info@salethmathachurch.org",
+    card_details_btn: "இப்போது அழைக்க",
+    card_details_copy_btn: "நகலெடு",
+    card_location_title: "இருப்பிடம்",
+    card_location_desc: "Google Maps மூலம் ஆலய இருப்பிடத்தை எளிதாக காணலாம்.",
+    card_location_btn: "Google Maps திறக்க",
+    footer_blessing: "சலேத் மாதாவின் அருள் ஒவ்வொரு குடும்பத்தையும் வழிநடத்தி, காத்து, பலப்படுத்தட்டும்."
   },
   en: {
     // Navigation & Brand
@@ -292,7 +308,23 @@ const translations = {
     img_stage11_3_desc: "The main statue majestically installed and centered on the altar.",
 
     // Footer Text
-    footer_text: "A Church Built Through Faith, Unity and God's Grace"
+    footer_text: "A Church Built Through Faith, Unity and God's Grace",
+
+    // Contact & Location Section
+    nav_contact: "Contact",
+    contact_title: "Contact & Location",
+    contact_subtitle: "Get in touch with us and find our church location.",
+    card_address_title: "Church Address",
+    card_address_text: "St. Saleth Matha Church<br>Saleth Nagar<br>Marambadi<br>Dindigul District<br>Tamil Nadu – 624709<br>India",
+    card_details_title: "Contact Details",
+    card_details_phone: "Phone: +91 88384 98762",
+    card_details_email: "Email: info@salethmathachurch.org",
+    card_details_btn: "Call Now",
+    card_details_copy_btn: "Copy",
+    card_location_title: "Location",
+    card_location_desc: "View the church location on Google Maps and navigate easily.",
+    card_location_btn: "Open Google Maps",
+    footer_blessing: "May the blessings of Our Lady of La Salette guide, protect, and strengthen every family."
   }
 };
 
@@ -733,5 +765,36 @@ function initKeyboardControls() {
         zoomLightbox(-0.2);
         break;
     }
+  });
+}
+
+// ==========================================
+// Copy Phone Number to Clipboard Feature
+// ==========================================
+function copyPhoneNumber() {
+  const phoneNumber = "+918838498762";
+  navigator.clipboard.writeText(phoneNumber).then(() => {
+    const copyBtn = document.getElementById("copy-phone-btn");
+    if (!copyBtn) return;
+    
+    // Save original text
+    const originalText = copyBtn.innerHTML;
+    
+    // Set temporary feedback text
+    if (currentLang === 'en') {
+      copyBtn.textContent = "Copied!";
+    } else {
+      copyBtn.textContent = "நகலெடுக்கப்பட்டது!";
+    }
+    
+    copyBtn.classList.add('copied');
+    
+    // Reset after 2 seconds
+    setTimeout(() => {
+      copyBtn.innerHTML = originalText;
+      copyBtn.classList.remove('copied');
+    }, 2000);
+  }).catch(err => {
+    console.error("Failed to copy text: ", err);
   });
 }
