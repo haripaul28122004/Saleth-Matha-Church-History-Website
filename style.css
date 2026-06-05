@@ -1619,9 +1619,14 @@ body.ta .footer-text {
   }
 
   /* Requirement 5: Mobile typography */
-  .hero-title,
+  .hero-title {
+    font-size: clamp(8px, 2.8vw, 12px) !important; /* Mathematically scaled for English on mobile */
+    line-height: 1.25 !important;
+    margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
+    white-space: nowrap !important; /* Enforces single line on phone */
+  }
   body.ta .hero-title {
-    font-size: clamp(8px, 3.0vw, 16px) !important; /* Mathematically scaled to fit on one line without overflow */
+    font-size: clamp(10px, 3.2vw, 14px) !important; /* Mathematically scaled for Tamil on mobile */
     line-height: 1.25 !important;
     margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
     white-space: nowrap !important; /* Enforces single line on phone */
@@ -1874,7 +1879,7 @@ display: none;
 @media (min-width: 1025px) {
   .hero-title {
     margin-bottom: 1.5rem !important;
-    white-space: nor !important;
+    white-space: nowrap !important;
   }
   .hero-subtitle {
     margin-bottom: 1.5rem !important;
