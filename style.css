@@ -308,7 +308,7 @@ body.ta .nav-link {
   background-size:cover ;   /* show full image */
   background-position: center center;
   background-repeat: no-repeat;
-
+ filter: brightness(1.25);
   z-index: 1;
 }
 
