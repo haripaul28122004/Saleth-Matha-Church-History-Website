@@ -1968,28 +1968,31 @@ display: none;
 .contact-card:hover::after {
   transform: scaleX(1);
 }
-
 .contact-card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  background: rgba(212, 175, 55, 0.08);
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  color: var(--gold-light);
-  box-shadow: var(--shadow-inner-glow);
-  transition: var(--transition-smooth);
-}
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
 
-.contact-card:hover .contact-card-icon {
-  transform: scale(1.1) rotate(5deg);
-  background: rgba(212, 175, 55, 0.15);
-  border-color: var(--gold);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.5rem;
+    color: #d4af37;
+
+    background: rgba(212,175,55,0.08);
+    border: 2px solid rgba(212,175,55,0.3);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,0.15),
+        inset 0 0 10px rgba(212,175,55,0.1);
+}
+.contact-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .contact-card-title {
