@@ -171,7 +171,15 @@ const translations = {
     card_location_title: "இருப்பிடம்",
     card_location_desc: "Google Maps மூலம் ஆலய இருப்பிடத்தை எளிதாக காணலாம்.",
     card_location_btn: "Google Maps திறக்க",
-    footer_blessing: "சலேத் மாதாவின் அருள் ஒவ்வொரு குடும்பத்தையும் வழிநடத்தி, காத்து, பலப்படுத்தட்டும்."
+    footer_blessing: "சலேத் மாதாவின் அருள் ஒவ்வொரு குடும்பத்தையும் வழிநடத்தி, காத்து, பலப்படுத்தட்டும்.",
+    
+    // Website Author Section
+    author_label: "இணையதள வடிவமைப்பாளர்",
+    author_title: "இணையதள வடிவமைப்பாளர்",
+    author_role_subtitle: "வடிவமைத்து உருவாக்கியவர்",
+    author_role_desc: "முழுமையான மென்பொருள் உருவாக்குநர் மற்றும் மென்பொருள் பொறியியல் மாணவர்",
+    author_email_label: "மின்னஞ்சல்:",
+    footer_copyright: "&copy; 2026 Saleth Matha Church History Website. Designed & Developed by <a href='#author' style='color: var(--gold-light); text-decoration: none; font-weight: 600;'>Hari Paul</a>."
   },
   en: {
     // Navigation & Brand
@@ -340,7 +348,15 @@ const translations = {
     card_location_title: "Location",
     card_location_desc: "Easily find the church location via Google Maps.",
     card_location_btn: "Open Google Maps",
-    footer_blessing: "May the blessings of Our Lady of Saleth guide, protect, and strengthen every family."
+    footer_blessing: "May the blessings of Our Lady of Saleth guide, protect, and strengthen every family.",
+    
+    // Website Author Section
+    author_label: "Website Author",
+    author_title: "Website Author",
+    author_role_subtitle: "Designed and Developed by",
+    author_role_desc: "Full Stack Developer & Software Engineering Student",
+    author_email_label: "Email:",
+    footer_copyright: "&copy; 2026 Saleth Matha Church History Website. Designed & Developed by <a href='#author' style='color: var(--gold-light); text-decoration: none; font-weight: 600;'>Hari Paul</a>."
   }
 };
 
