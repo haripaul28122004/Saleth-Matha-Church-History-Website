@@ -1555,7 +1555,8 @@ body.ta .footer-text {
 /* Mobile Hero Background Fix */
 .hero-bg {
     background-size: cover;
-    background-position: 30% center !important;
+    background-position: center top !important;
+    background-repeat: no-repeat;
 }
   /* Requirement 7: Navigation - Premium Hamburger menu (Do NOT stack menu items across screen) */
   .mobile-nav-toggle {
