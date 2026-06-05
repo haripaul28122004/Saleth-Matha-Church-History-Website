@@ -1494,7 +1494,8 @@ body.ta .footer-text {
   body.ta .hero-title {
     font-size: clamp(18px, 4.8vw, 38px) !important; /* Fluid tablet title */
     margin-bottom: 1.25rem !important;
-    white-space: nowrap !important; /* Enforces single line on tablet */
+    white-space: normal !important; /* Allows wrapping on tablet if needed */
+    line-height: 1.35 !important;
   }
   .hero-subtitle,
   body.ta .hero-subtitle {
