@@ -1554,7 +1554,7 @@ body.ta .footer-text {
   }
 /* Mobile Hero Background Fix */
 .hero-bg {
-    background-size: cover;
+    background-size: contain ;
     background-position: center top !important;
     background-repeat: no-repeat;
 }
