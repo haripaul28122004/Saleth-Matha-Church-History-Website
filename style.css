@@ -1611,7 +1611,7 @@ body.ta .footer-text {
 
   /* Compact Navbar spacing for mobile */
 .navbar {
-    padding: 0.8rem 1.5rem !important;
+    padding: 0.5rem 1rem !important;
 }
   .lang-btn {
     padding: 0.3rem 0.6rem !important;
@@ -1621,7 +1621,7 @@ body.ta .footer-text {
   /* Requirement 5: Mobile typography */
   .hero-title,
   body.ta .hero-title {
-    font-size: clamp(10px, 4.0vw, 20px) !important; /* Mathematically scaled to fit on one line without overflow */
+    font-size: clamp(8px, 3.0vw, 16px) !important; /* Mathematically scaled to fit on one line without overflow */
     line-height: 1.25 !important;
     margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
     white-space: nowrap !important; /* Enforces single line on phone */
@@ -1646,7 +1646,7 @@ body.ta .footer-text {
   flex-direction: column !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  padding-top: 125px !important; /* Clears mobile navbar brand text & logo */
+  padding-top: 90px !important; /* Clears mobile navbar brand text & logo */
   padding-bottom: 20px !important;
 }
 
@@ -1668,8 +1668,8 @@ body.ta .footer-text {
 
   /* Scale down navbar logo and brand text on mobile to prevent overlaps */
 .nav-logo-portrait {
-    width: 55px !important;
-    height: 70px !important;
+    width: 40px !important;
+    height: 55px !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -1678,7 +1678,7 @@ body.ta .footer-text {
     font-size: 1rem !important;
   }
   body.ta .nav-logo-text {
-    font-size: 0.95rem !important;
+    font-size: 0.75rem !important;
   }
   .nav-logo-sub {
     font-size: 0.65rem !important;
@@ -1874,7 +1874,7 @@ display: none;
 @media (min-width: 1025px) {
   .hero-title {
     margin-bottom: 1.5rem !important;
-    white-space: nowrap !important;
+    white-space: nor !important;
   }
   .hero-subtitle {
     margin-bottom: 1.5rem !important;
