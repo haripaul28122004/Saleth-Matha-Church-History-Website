@@ -1610,9 +1610,9 @@ body.ta .footer-text {
 
 
   /* Compact Navbar spacing for mobile */
-  .navbar {
-    padding: 1.2rem 1rem !important;
-  }
+.navbar {
+    padding: 0.5rem 1rem !important;
+}
   .lang-btn {
     padding: 0.3rem 0.6rem !important;
     font-size: 0.75rem !important;
