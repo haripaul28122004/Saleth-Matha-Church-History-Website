@@ -1572,7 +1572,7 @@ body.ta .footer-text {
 /* Mobile Hero Background Fix */
 .hero-bg {
     background-size: cover;
-    background-position: center 30% !important; /* Shifts church slightly downward for more sky space */
+    background-position: center 25% !important; /* Shifts church downward on mobile to clear the button */
     background-repeat: no-repeat;
 }
   /* Requirement 7: Navigation - Premium Hamburger menu (Do NOT stack menu items across screen) */
@@ -1621,16 +1621,22 @@ body.ta .footer-text {
   /* Requirement 5: Mobile typography */
   .hero-title,
   body.ta .hero-title {
-    font-size: clamp(14px, 4.8vw, 26px) !important; /* Fluid mobile title to prevent wrapping */
+    font-size: clamp(14px, 4.8vw, 24px) !important; /* Fluid mobile title to prevent wrapping */
     line-height: 1.25 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
     white-space: nowrap !important; /* Enforces single line on phone */
   }
   .hero-subtitle,
   body.ta .hero-subtitle {
-    font-size: 14px !important;
+    font-size: 13px !important;
     line-height: 1.4 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1.8rem !important; /* Compact button for mobile */
+    font-size: 0.85rem !important;
+    margin-bottom: 0 !important;
   }
 
 .hero-section {
@@ -1640,7 +1646,7 @@ body.ta .footer-text {
   flex-direction: column !important;
   justify-content: flex-start !important;
   align-items: center !important;
-  padding-top: 100px !important;
+  padding-top: 125px !important; /* Clears mobile navbar brand text & logo */
   padding-bottom: 20px !important;
 }
 
@@ -1864,14 +1870,15 @@ display: none;
   }
 
 }
-/* Title spacing */
-.hero-title {
-  margin-bottom: 1.5rem !important;
-  white-space: nowrap !important;
-}
-
-.hero-subtitle {
-  margin-bottom: 1.5rem !important;
+/* Title spacing override restricted to desktop */
+@media (min-width: 1025px) {
+  .hero-title {
+    margin-bottom: 1.5rem !important;
+    white-space: nowrap !important;
+  }
+  .hero-subtitle {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 /* Tablet */
