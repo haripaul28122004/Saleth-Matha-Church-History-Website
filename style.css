@@ -288,11 +288,13 @@ body.ta .nav-link {
   height: 100vh;
   min-height: 600px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Positions hero content near the top-center */
   text-align: center;
   overflow: hidden;
   padding: 0 1rem;
+  padding-top: 110px; /* Positions title near top, clearing fixed navbar */
 }
 
 /* Background parallax image container */
@@ -305,10 +307,10 @@ body.ta .nav-link {
 
   background-image: url('completed_church_hero.png');
 
-  background-size:cover ;   /* show full image */
-  background-position: center center;
+  background-size: cover;
+  background-position: center 40%; /* Move background slightly downward to show more sky */
   background-repeat: no-repeat;
- filter: brightness(1.25);
+  filter: brightness(1.25);
   z-index: 1;
 }
 
@@ -326,10 +328,14 @@ body.ta .nav-link {
   position: relative;
   z-index: 3;
   max-width: 900px;
-  margin-top: 20px;
+  width: 100%;
+  margin: 0;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(-40px); /* Smoother entrance slide-down */
   animation: heroReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-icon {
@@ -340,33 +346,35 @@ body.ta .nav-link {
 }
 
 .hero-title {
-  font-size: 60px;
+  font-size: clamp(22px, 4.5vw, 3.0rem); /* Fluid responsive font size */
   font-weight: 900;
   line-height: 1.2;
-  margin-bottom: 20px !important; /* Oval -> Title gap is 40px, Title -> Subtitle gap is 20px */
+  margin-bottom: 1.5rem !important; /* Equal vertical spacing */
   text-shadow: 0 4px 20px rgba(0,0,0,0.6);
   font-family: var(--font-serif-en);
+  white-space: nowrap; /* Enforces single line on desktop */
 }
 
 body.ta .hero-title {
   font-family: var(--font-serif-ta);
-  font-size: 72px;
-  line-height: 1.15;
+  font-size: clamp(22px, 5.0vw, 2.6rem); /* Fluid responsive size for Tamil */
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 .hero-subtitle {
-  font-size: 26px;
+  font-size: 22px; /* Adjusted for breathing room in the sky area */
   font-weight: 300;
   color: var(--cream);
   max-width: 800px;
-  margin: 0 auto 30px auto !important; /* Subtitle -> Button gap is 30px */
+  margin: 0 auto 1.5rem auto !important; /* Equal vertical spacing */
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
   font-family: var(--font-sans-en);
 }
 
 body.ta .hero-subtitle {
   font-family: var(--font-sans-ta);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .hero-btn {
@@ -382,6 +390,7 @@ body.ta .hero-subtitle {
   overflow: hidden;
   z-index: 1;
   transition: var(--transition-smooth);
+  margin-bottom: 0 !important; /* Last element in hero-content */
 }
 
 body.ta .hero-btn {
@@ -1483,16 +1492,24 @@ body.ta .footer-text {
   /* Requirement 5: Tablet typography (Title: 56px, Subtitle: 22px) */
   .hero-title,
   body.ta .hero-title {
-    font-size: 56px !important;
+    font-size: clamp(18px, 4.8vw, 38px) !important; /* Fluid tablet title */
+    margin-bottom: 1.25rem !important;
+    white-space: nowrap !important; /* Enforces single line on tablet */
   }
   .hero-subtitle,
   body.ta .hero-subtitle {
-    font-size: 22px !important;
+    font-size: 18px !important;
+    margin-bottom: 1.25rem !important;
   }
 
   .hero-section {
     height: 80vh !important;
     min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-top: 110px !important;
   }
 
   /* Hero portrait dimensions override (Tablet: 190px x 175px) */
@@ -1554,8 +1571,8 @@ body.ta .footer-text {
   }
 /* Mobile Hero Background Fix */
 .hero-bg {
-    background-size: cover ;
-    background-position: center center !important;
+    background-size: cover;
+    background-position: center 30% !important; /* Shifts church slightly downward for more sky space */
     background-repeat: no-repeat;
 }
   /* Requirement 7: Navigation - Premium Hamburger menu (Do NOT stack menu items across screen) */
@@ -1601,27 +1618,37 @@ body.ta .footer-text {
     font-size: 0.75rem !important;
   }
 
-  /* Requirement 5: Mobile typography (Title: 36px, Subtitle: 18px) */
+  /* Requirement 5: Mobile typography */
   .hero-title,
   body.ta .hero-title {
-    font-size: 32px !important;
+    font-size: clamp(14px, 4.8vw, 26px) !important; /* Fluid mobile title to prevent wrapping */
     line-height: 1.25 !important;
+    margin-bottom: 1rem !important;
+    white-space: nowrap !important; /* Enforces single line on phone */
   }
   .hero-subtitle,
   body.ta .hero-subtitle {
-    font-size: 18px !important;
-    line-height: 1.5 !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
   }
 
 .hero-section {
   min-height: 100vh !important;
   height: 100vh !important;
-  padding-top: 90px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding-top: 100px !important;
   padding-bottom: 20px !important;
 }
 
   .hero-content {
   padding: 0 15px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
 .madha-portrait-container {
@@ -1839,11 +1866,12 @@ display: none;
 }
 /* Title spacing */
 .hero-title {
-  margin-bottom: 20px !important;
+  margin-bottom: 1.5rem !important;
+  white-space: nowrap !important;
 }
 
 .hero-subtitle {
-  margin-bottom: 30px !important;
+  margin-bottom: 1.5rem !important;
 }
 
 /* Tablet */
