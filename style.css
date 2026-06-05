@@ -1625,10 +1625,7 @@ body.ta .footer-text {
 }
 
 .madha-portrait-container {
-  width: 140px !important;
-  height: 180px !important;
-  margin-top: 15px !important;
-  margin-bottom: 15px !important;
+    display: none !important;
 }
 
   .madha-portrait-container::before {
