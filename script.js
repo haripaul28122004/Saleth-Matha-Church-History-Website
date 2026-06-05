@@ -162,7 +162,7 @@ const translations = {
     contact_title: "தொடர்பு & இருப்பிடம்",
     contact_subtitle: "எங்களை தொடர்புகொண்டு ஆலய இருப்பிடத்தை அறிந்துகொள்ளுங்கள்.",
     card_address_title: "ஆலய முகவரி",
-    card_address_text: "புனித சலேத் மாதா ஆலயம்<br>சலேத் நகர்<br>மாரம்பாடி<br>திண்டுக்கல் மாவட்டம்<br>தமிழ்நாடு – 624709<br>இந்தியா",
+    card_address_text: "புனித சலேத் மாதா ஆலயம்<br>சலேத் நகர்<br>மாரம்பாடி மறைமாவட்டம்<br>திண்டுக்கல் மாவட்டம்<br>தமிழ்நாடு – 624709",
     card_details_title: "தொடர்பு விவரங்கள்",
     card_details_phone: "தொலைபேசி: +91 88384 98762",
     card_details_email: "மின்னஞ்சல்: salethmadhachurch@gmail.com",
