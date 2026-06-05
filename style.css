@@ -1293,6 +1293,8 @@ body.ta .author-role {
   font-weight: 600;
   border-bottom: 1px dashed rgba(212, 175, 55, 0.5);
   transition: var(--transition-fast);
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .author-email-link:hover {
@@ -2145,6 +2147,14 @@ body.ta .footer-blessing {
   }
   .author-info {
     align-items: center;
+    width: 100%;
+  }
+  .author-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+    width: 100%;
   }
   .author-socials {
     justify-content: center;
@@ -2168,10 +2178,16 @@ body.ta .footer-blessing {
   }
   
   .author-card {
-    padding: 2rem 1rem;
+    padding: 2rem 0.75rem;
   }
   .author-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .author-role {
+    font-size: 0.9rem;
+  }
+  .author-contact {
+    font-size: 0.85rem;
   }
   .author-socials .social-btn {
     width: 100%;
