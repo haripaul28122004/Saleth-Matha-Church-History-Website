@@ -1611,7 +1611,7 @@ body.ta .footer-text {
 
   /* Compact Navbar spacing for mobile */
 .navbar {
-    padding: 0.5rem 1rem !important;
+    padding: 0.8rem 1.5rem !important;
 }
   .lang-btn {
     padding: 0.3rem 0.6rem !important;
@@ -1621,7 +1621,7 @@ body.ta .footer-text {
   /* Requirement 5: Mobile typography */
   .hero-title,
   body.ta .hero-title {
-    font-size: clamp(14px, 4.8vw, 24px) !important; /* Fluid mobile title to prevent wrapping */
+    font-size: clamp(12px, 4.2vw, 22px) !important; /* Mathematically scaled to fit on one line without overflow */
     line-height: 1.25 !important;
     margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
     white-space: nowrap !important; /* Enforces single line on phone */
