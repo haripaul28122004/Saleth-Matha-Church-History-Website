@@ -1621,7 +1621,7 @@ body.ta .footer-text {
   /* Requirement 5: Mobile typography */
   .hero-title,
   body.ta .hero-title {
-    font-size: clamp(12px, 4.2vw, 22px) !important; /* Mathematically scaled to fit on one line without overflow */
+    font-size: clamp(10px, 4.0vw, 20px) !important; /* Mathematically scaled to fit on one line without overflow */
     line-height: 1.25 !important;
     margin-bottom: 0.6rem !important; /* Tight spacing to pull content higher */
     white-space: nowrap !important; /* Enforces single line on phone */
